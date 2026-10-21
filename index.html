@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Yihui Li | Academic Homepage</title>
-  <meta name="description" content="Academic homepage of Yihui Li, a Ph.D. student at the School of Computer Science, South China Normal University, researching feature selection, partial-label learning, multi-label learning, label enhancement, and machine learning for healthcare.">
+  <meta name="description" content="Academic homepage of Yihui Li, researching machine learning and data mining, particularly feature selection, partial-label learning, and multi-label learning, with applications in healthcare and brain–computer interfaces.">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23354f67'/%3E%3Cpath d='M10 25 32 15l22 10-22 10zM18 33v11c7 6 21 6 28 0V33' fill='none' stroke='white' stroke-width='4' stroke-linejoin='round'/%3E%3C/svg%3E">
   <style>
     :root { color-scheme: light; font-family: "Trebuchet MS", "PingFang SC", "Microsoft YaHei", Helvetica, Arial, sans-serif; font-size: 16px; scroll-behavior: smooth; }
@@ -47,6 +47,13 @@
     .body-list li { margin: 0 0 5px; padding-left: 0; }
     .body-list em { font-style: italic; }
     .paper-list li { margin-bottom: 8px; }
+    .paper-list li { margin-bottom: 19px; }
+    .paper-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+    .paper-tag { display: inline-flex; align-items: center; padding: 3px 9px; border: 1px solid #dce6e3; border-radius: 5px; background: #f1f7f4; color: #35634e; font-size: .75rem; font-weight: 600; line-height: 1.5; text-decoration: none; }
+    .paper-tag.metric { color: #354f67; background: #f1f5f9; border-color: #dce4ed; }
+    .paper-tag.metric:hover { background: #e5edf5; }
+    .author-mark { color: #354f67; font-weight: 700; padding-left: 1px; }
+    .author-legend { font-size: .82rem; margin: 0 0 15px; color: #70777c; }
     .paper-list strong { font-weight: 700; }
     .paper-list sup { font-size: .72em; line-height: 0; vertical-align: super; }
     .paper-title { font-weight: 600; }
@@ -97,12 +104,12 @@
   <header class="masthead">
     <div class="masthead-inner">
       <nav class="desktop-nav" aria-label="Main navigation" data-i18n-aria-label="main_navigation">
-        <a href="#about-me" data-i18n="nav_home">Homepage</a><a href="#about-me" data-i18n="nav_about">About Me</a><a href="#news" data-i18n="nav_news">News</a><a href="#publications" data-i18n="nav_publications">Publications</a><a href="#honors" data-i18n="nav_honors">Honors</a><a href="#experience" data-i18n="nav_experience">Experience</a><a href="#education" data-i18n="nav_education">Education</a>
+        <a href="#about-me" data-i18n="nav_home">Homepage</a><a href="#about-me" data-i18n="nav_about">About Me</a><a href="#news" data-i18n="nav_news">News</a><a href="#publications" data-i18n="nav_publications">Publications</a><a href="#honors" data-i18n="nav_honors">Honors</a><a href="#experience" data-i18n="nav_experience">Work Experience</a><a href="#education" data-i18n="nav_education">Education</a>
       </nav>
       <details class="mobile-nav">
         <summary><span data-i18n="nav_home">Homepage</span> <span class="menu-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/></svg></span></summary>
         <nav aria-label="Mobile navigation" data-i18n-aria-label="mobile_navigation">
-          <a href="#about-me" data-i18n="nav_about">About Me</a><a href="#news" data-i18n="nav_news">News</a><a href="#publications" data-i18n="nav_publications">Publications</a><a href="#honors" data-i18n="nav_honors">Honors</a><a href="#experience" data-i18n="nav_experience">Experience</a><a href="#education" data-i18n="nav_education">Education</a>
+          <a href="#about-me" data-i18n="nav_about">About Me</a><a href="#news" data-i18n="nav_news">News</a><a href="#publications" data-i18n="nav_publications">Publications</a><a href="#honors" data-i18n="nav_honors">Honors</a><a href="#experience" data-i18n="nav_experience">Work Experience</a><a href="#education" data-i18n="nav_education">Education</a>
         </nav>
       </details>
       <div class="language-switch" role="group" aria-label="Language selector" data-i18n-aria-label="language_selector">
@@ -119,13 +126,12 @@
       <p class="role"><span data-i18n="role">Ph.D. Student</span><br><span data-i18n="university">South China Normal University</span></p>
       <ul class="profile-links">
         <li><span><span class="icon" aria-hidden="true">●</span><span data-i18n="location">Guangzhou, China</span></span></li>
-        <li><a href="mailto:3187858832@qq.com"><span class="icon" aria-hidden="true">✉</span><span>3187858832@qq.com</span></a></li>
         <li><a href="https://orcid.org/0009-0009-0776-0276" target="_blank" rel="noopener noreferrer"><span class="icon" aria-hidden="true">Ⓞ</span><span data-i18n="orcid">ORCID</span></a></li>
       </ul>
     </aside>
 
     <article class="content">
-      <p class="intro" data-i18n="intro">I am a Ph.D. student in the School of Computer Science at South China Normal University in Guangzhou, China, since September 2024. I received my M.S. degree in Computer Science and Technology from Jiangxi Agricultural University in 2023 and my B.Eng. degree in Network Engineering in 2020. My research focuses on machine learning and data mining, particularly feature selection, partial-label learning, multi-label learning, and label distribution learning, with cross-disciplinary applications to healthcare such as dementia risk prediction.</p>
+      <p class="intro" data-i18n="intro">I am a Ph.D. student in the School of Computer Science at South China Normal University in Guangzhou, China, since September 2024. I received my master’s degree from the School of Computer and Information Engineering, Jiangxi Agricultural University, in 2023 through recommendation-based admission. My research focuses on machine learning and data mining, particularly feature selection, partial-label learning, and multi-label learning, with interdisciplinary applications in healthcare (such as dementia risk prediction) and brain–computer interfaces.</p>
 
       <section id="news" aria-labelledby="news-heading">
         <h2 id="news-heading" data-i18n="news_heading">News</h2>
@@ -139,13 +145,12 @@
 
       <section id="publications" aria-labelledby="publications-heading">
         <h2 id="publications-heading" data-i18n="publications_heading">Selected Publications</h2>
+        <p class="author-legend" data-i18n="author_legend">† Equal contribution / co-first authors; * Corresponding authors.</p>
         <ul class="body-list paper-list">
-          <li><a class="paper-title" href="https://doi.org/10.1016/j.patcog.2026.114789" target="_blank" rel="noopener noreferrer">Multi-label semantic decoding via Hierarchical Encoding and sparse Representation Fusion</a>. <strong>Yihui Li</strong>, Qianzhi Ye, Guodong Du, Yong Tang, and Jia Zhang. <strong>Pattern Recognition</strong>, 2026.</li>
-          <li><a class="paper-title" href="https://doi.org/10.1186/s13195-025-01750-6" target="_blank" rel="noopener noreferrer">Development and validation of a novel predictive model for dementia risk in middle-aged and elderly depression individuals: a large and longitudinal machine learning cohort study</a>. Xuan Xiao, <strong>Yihui Li</strong>, Qiaoboyang Wu, Xinting Liu, Xu Cao, Maiping Li, Jianjing Liu, Lianggeng Gong, and Xi-jian Dai. <strong>Alzheimer's Research & Therapy</strong>, 2025.</li>
-          <li><a class="paper-title" href="https://doi.org/10.1109/TKDE.2024.3405489" target="_blank" rel="noopener noreferrer">Confidence-Induced Granular Partial Label Feature Selection via Dependency and Similarity</a>. Wenbin Qian, <strong>Yihui Li</strong>, Qianzhi Ye, Shuyin Xia, Jintao Huang, and Weiping Ding. <strong>IEEE Transactions on Knowledge and Data Engineering</strong>, 2024.</li>
-          <li><a class="paper-title" href="https://doi.org/10.1016/j.inffus.2023.01.019" target="_blank" rel="noopener noreferrer">Disambiguation-based partial label feature selection via feature dependency and label consistency</a>. Wenbin Qian, <strong>Yihui Li</strong>, Qianzhi Ye, Weiping Ding, and Wenhao Shu. <strong>Information Fusion</strong>, 2023.</li>
-          <li><a class="paper-title" href="https://doi.org/10.1016/j.knosys.2022.109778" target="_blank" rel="noopener noreferrer">Label distribution feature selection with feature weights fusion and local label correlations</a>. Wenbin Qian, Qianzhi Ye, <strong>Yihui Li</strong>, and Shiming Dai. <strong>Knowledge-Based Systems</strong>, 2022.</li>
-          <li><a class="paper-title" href="https://doi.org/10.1016/j.ins.2022.05.094" target="_blank" rel="noopener noreferrer">Relevance-based label distribution feature selection via convex optimization</a>. Wenbin Qian, Qianzhi Ye, <strong>Yihui Li</strong>, Jintao Huang, and Shiming Dai. <strong>Information Sciences</strong>, 2022.</li>
+          <li><a class="paper-title" href="https://doi.org/10.1016/j.patcog.2026.114789" target="_blank" rel="noopener noreferrer">Multi-label semantic decoding via Hierarchical Encoding and sparse Representation Fusion</a>. <strong>Yihui Li</strong>, Qianzhi Ye, Guodong Du, Yong Tang, and Jia Zhang<sup class="author-mark">*</sup>. <strong>Pattern Recognition</strong>, 2026.<div class="paper-tags"><span class="paper-tag" data-i18n="cas_zone">CAS Zone 1</span><a class="paper-tag metric" href="https://www.sciencedirect.com/journal/pattern-recognition" target="_blank" rel="noopener noreferrer">IF 9.1 · 2025</a></div></li>
+          <li><a class="paper-title" href="https://doi.org/10.1186/s13195-025-01750-6" target="_blank" rel="noopener noreferrer">Development and validation of a novel predictive model for dementia risk in middle-aged and elderly depression individuals: a large and longitudinal machine learning cohort study</a>. Xuan Xiao<sup class="author-mark">†</sup>, <strong>Yihui Li</strong><sup class="author-mark">†</sup>, Qiaoboyang Wu, Xinting Liu, Xu Cao, Maiping Li, Jianjing Liu, Lianggeng Gong, and Xi-jian Dai<sup class="author-mark">*</sup>. <strong>Alzheimer's Research & Therapy</strong>, 2025.<div class="paper-tags"><span class="paper-tag" data-i18n="cas_zone">CAS Zone 1</span><a class="paper-tag metric" href="https://link.springer.com/journal/13195" target="_blank" rel="noopener noreferrer">IF 8.9 · 2025</a></div></li>
+          <li><a class="paper-title" href="https://doi.org/10.1109/TKDE.2024.3405489" target="_blank" rel="noopener noreferrer">Confidence-Induced Granular Partial Label Feature Selection via Dependency and Similarity</a>. Wenbin Qian<sup class="author-mark">*</sup>, <strong>Yihui Li</strong>, Qianzhi Ye<sup class="author-mark">*</sup>, Shuyin Xia, Jintao Huang, and Weiping Ding. <strong>IEEE Transactions on Knowledge and Data Engineering</strong>, 2024.<div class="paper-tags"><span class="paper-tag" data-i18n="cas_zone">CAS Zone 1</span><a class="paper-tag metric" href="https://fds.cityu.edu.mo/uploads/userfiles/Q1%20Journal%20Catalog_Computer%20Science%20%26%20Engineering%2020250812.pdf" target="_blank" rel="noopener noreferrer">IF 10.4 · 2024</a></div></li>
+          <li><a class="paper-title" href="https://doi.org/10.1016/j.inffus.2023.01.019" target="_blank" rel="noopener noreferrer">Disambiguation-based partial label feature selection via feature dependency and label consistency</a>. Wenbin Qian<sup class="author-mark">†,*</sup>, <strong>Yihui Li</strong><sup class="author-mark">†</sup>, Qianzhi Ye, Weiping Ding, and Wenhao Shu. <strong>Information Fusion</strong>, 2023.<div class="paper-tags"><span class="paper-tag" data-i18n="cas_zone">CAS Zone 1</span><a class="paper-tag metric" href="https://www.sciencedirect.com/journal/information-fusion" target="_blank" rel="noopener noreferrer">IF 17.4 · 2025</a></div></li>
         </ul>
         <p class="muted"><span data-i18n="complete_publications">For the complete and most up-to-date publication list, please visit my</span> <a href="https://orcid.org/0009-0009-0776-0276" target="_blank" rel="noopener noreferrer" data-i18n="orcid_profile">ORCID profile</a><span data-i18n="period">.</span></p>
       </section>
@@ -153,17 +158,16 @@
       <section id="honors" aria-labelledby="honors-heading">
         <h2 id="honors-heading" data-i18n="honors_heading">Honors</h2>
         <ul class="body-list">
-          <li><em>2023</em>: <span data-i18n="honor_1">National Third Prize, the 19th China Graduate Mathematical Contest in Modeling.</span></li>
-          <li><em>2023</em>: <span data-i18n="honor_2">Outstanding Graduate.</span></li>
-          <li><em>2022</em>: <span data-i18n="honor_3">National First Prize, the 5th "Zhongqing Cup" National College Student Mathematical Contest in Modeling.</span></li>
-          <li><em>2022</em>: <span data-i18n="honor_4">Grand Prize, Jiangxi Graduate Mathematical Contest in Modeling.</span></li>
-          <li><em>2021</em>: <span data-i18n="honor_5">First Prize, Jiangxi Graduate Mathematical Contest in Modeling.</span></li>
-          <li><em>2020&ndash;2023</em>: <span data-i18n="honor_6">University First-Class Graduate Scholarship (twice) and Jiangxi Provincial Academic Scholarship.</span></li>
+          <li><em>2023</em>: <span data-i18n="honor_2">Outstanding Graduate Student.</span></li>
           <li><em>2020</em>: <span data-i18n="honor_7">Outstanding Undergraduate Graduate.</span></li>
-          <li><em>2019</em>: <span data-i18n="honor_8">National Second Prize, the 10th Lanqiao Cup National Finals (Java Group).</span></li>
-          <li><em>2019</em>: <span data-i18n="honor_9">Third Prize, Jiangxi College Student Mathematical Contest in Modeling.</span></li>
-          <li><em>2018</em>: <span data-i18n="honor_10">First Prize, Jiangxi Division, the 9th Lanqiao Cup (Java Group).</span></li>
-          <li><span data-i18n="honor_patent">One national invention patent (drafted) and three national software copyrights.</span></li>
+        </ul>
+      </section>
+
+      <section id="experience" aria-labelledby="experience-heading">
+        <h2 id="experience-heading" data-i18n="experience_heading">Work Experience</h2>
+        <ul class="body-list">
+          <li><em>2023.06–2024.09</em>: <span data-i18n="exp_hospital">Technical Director, Director Xi-jian Dai’s Team, Imaging Center, The Second Affiliated Hospital of Nanchang University.</span></li>
+          <li><em>2019.08–2020.08</em>: <span data-i18n="exp_baidu">Knowledge Graph Department, Baidu International Technology (Shenzhen) Co., Ltd. (Internship).</span></li>
         </ul>
       </section>
 
@@ -171,8 +175,7 @@
         <h2 id="education-heading" data-i18n="education_heading">Education</h2>
         <ul class="body-list">
           <li data-i18n="education_phd">Ph.D. student, School of Computer Science, South China Normal University, Guangzhou, China (2024.09&ndash;present).</li>
-          <li data-i18n="education_ms">M.S. in Computer Science and Technology (recommended exemption), Jiangxi Agricultural University, Nanchang, China (2020.09&ndash;2023.06).</li>
-          <li data-i18n="education_bs">B.Eng. in Network Engineering, Jiangxi Agricultural University, Nanchang, China (2016.09&ndash;2020.06).</li>
+          <li data-i18n="education_ms">Master’s degree (recommendation-based admission), School of Computer and Information Engineering, Jiangxi Agricultural University, Nanchang, China, 2023.</li>
         </ul>
       </section>
     </article>
@@ -181,7 +184,7 @@
     const translations = {
       en: {
         page_title: 'Yihui Li | Academic Homepage',
-        meta_description: 'Academic homepage of Yihui Li, a Ph.D. student at the School of Computer Science, South China Normal University, researching feature selection, partial-label learning, multi-label learning, label enhancement, and machine learning for healthcare.',
+        meta_description: "Academic homepage of Yihui Li, researching machine learning and data mining, particularly feature selection, partial-label learning, and multi-label learning, with applications in healthcare and brain–computer interfaces.",
         main_navigation: 'Main navigation',
         mobile_navigation: 'Mobile navigation',
         language_selector: 'Language selector',
@@ -196,46 +199,33 @@
         university: 'South China Normal University',
         location: 'Guangzhou, China',
         orcid: 'ORCID',
-        intro: 'I am a Ph.D. student in the School of Computer Science at South China Normal University in Guangzhou, China, since September 2024. I received my M.S. degree in Computer Science and Technology from Jiangxi Agricultural University in 2023 and my B.Eng. degree in Network Engineering in 2020. My research focuses on machine learning and data mining, particularly feature selection, partial-label learning, multi-label learning, and label distribution learning, with cross-disciplinary applications to healthcare such as dementia risk prediction.',
+        intro: "I am a Ph.D. student in the School of Computer Science at South China Normal University in Guangzhou, China, since September 2024. I received my master’s degree from the School of Computer and Information Engineering, Jiangxi Agricultural University, in 2023 through recommendation-based admission. My research focuses on machine learning and data mining, particularly feature selection, partial-label learning, and multi-label learning, with interdisciplinary applications in healthcare (such as dementia risk prediction) and brain–computer interfaces.",
         news_heading: 'News',
         news_1: '2026: Our paper “Multi-label semantic decoding via Hierarchical Encoding and sparse Representation Fusion” was published in Pattern Recognition.',
         news_2: '2025: Our paper “Development and validation of a novel predictive model for dementia risk in middle-aged and elderly depression individuals” was published in Alzheimer’s Research & Therapy.',
         news_3: '2024: Our paper “Confidence-Induced Granular Partial Label Feature Selection via Dependency and Similarity” was published in IEEE Transactions on Knowledge and Data Engineering.',
         news_4: '2023: Our paper “Disambiguation-based partial label feature selection via feature dependency and label consistency” was published in Information Fusion.',
         publications_heading: 'Selected Publications',
+        author_legend: '† Equal contribution / co-first authors; * Corresponding authors. IF tags show the metric year and link to the source.',
+        cas_zone: 'CAS Zone 1',
         complete_publications: 'For the complete and most up-to-date publication list, please visit my',
         orcid_profile: 'ORCID profile',
         period: '.',
         honors_heading: 'Honors',
-        honor_1: 'National Third Prize, the 19th China Graduate Mathematical Contest in Modeling.',
-        honor_2: 'Outstanding Graduate.',
-        honor_3: 'National First Prize, the 5th "Zhongqing Cup" National College Student Mathematical Contest in Modeling.',
-        honor_4: 'Grand Prize, Jiangxi Graduate Mathematical Contest in Modeling.',
-        honor_5: 'First Prize, Jiangxi Graduate Mathematical Contest in Modeling.',
-        honor_6: 'University First-Class Graduate Scholarship (twice) and Jiangxi Provincial Academic Scholarship.',
+        honor_2: "Outstanding Graduate Student.",
         honor_7: 'Outstanding Undergraduate Graduate.',
-        honor_8: 'National Second Prize, the 10th Lanqiao Cup National Finals (Java Group).',
-        honor_9: 'Third Prize, Jiangxi College Student Mathematical Contest in Modeling.',
-        honor_10: 'First Prize, Jiangxi Division, the 9th Lanqiao Cup (Java Group).',
-        honor_patent: 'One national invention patent (drafted) and three national software copyrights.',
-        nav_experience: 'Experience',
-        experience_heading: 'Internship Experience',
-        exp_baidu: 'Baidu International Technology (Shenzhen) Co., Ltd. — Knowledge Graph Department',
-        exp_baidu_1: 'Data analysis and data cleaning for the Baidu Brain event graph project; assisted in building the event graph and deploying the project.',
-        exp_baidu_2: 'Built and developed the medical-record quality-control platform for the Lingyi Zhihui CDSS project, which went live at top-tier (Grade-A tertiary) hospitals including Peking University International Hospital, Nanjing Drum Tower Hospital, and the First Affiliated Hospital of Nanchang University.',
-        exp_baidu_3: 'Awarded the "Outstanding Intern of Baidu" title during the internship.',
-        exp_tv: 'Jiangxi Radio and Television Station — Algorithm Development',
-        exp_tv_1: 'Completed the dialogue-corpus extraction project for the TV program "Gold Medal Mediation" using deep-learning speech recognition, speech segmentation, voiceprint recognition, and fuzzy clustering; the system is now in use within the station.',
-        exp_tv_2: 'Trained a personalized speech-synthesis model (based on Sambert-Hifigan) from video data of the host Zhang Ting, reproducing her speaking characteristics; the customized speech-synthesis service is now in use within the station.',
+        nav_experience: "Work Experience",
+        experience_heading: "Work Experience",
+        exp_baidu: "Knowledge Graph Department, Baidu International Technology (Shenzhen) Co., Ltd. (Internship).",
+        exp_hospital: 'Technical Director, Director Xi-jian Dai’s Team, Imaging Center, The Second Affiliated Hospital of Nanchang University.',
         education_heading: 'Education',
         education_phd: 'Ph.D. student, School of Computer Science, South China Normal University, Guangzhou, China (2024.09–present).',
-        education_ms: 'M.S. in Computer Science and Technology (recommended exemption), Jiangxi Agricultural University, Nanchang, China (2020.09–2023.06).',
-        education_bs: 'B.Eng. in Network Engineering, Jiangxi Agricultural University, Nanchang, China (2016.09–2020.06).',
+        education_ms: "Master’s degree (recommendation-based admission), School of Computer and Information Engineering, Jiangxi Agricultural University, Nanchang, China, 2023.",
         portrait_alt: 'Portrait of Yihui Li'
       },
       zh: {
         page_title: '李艺晖 | 个人学术主页',
-        meta_description: '李艺晖的个人学术主页，现为华南师范大学计算机学院博士研究生，研究方向包括特征选择、偏标记学习、多标签学习、标签增强与弱监督学习，并在医疗健康（如痴呆风险预测）方向开展交叉应用研究。',
+        meta_description: "李艺晖的个人学术主页，研究聚焦于机器学习与数据挖掘，特别是特征选择、偏标记学习与多标签学习，并在医疗健康（如痴呆风险预测）方向和脑机接口开展交叉应用研究。",
         main_navigation: '主导航',
         mobile_navigation: '移动端导航',
         language_selector: '语言选择',
@@ -250,41 +240,28 @@
         university: '华南师范大学',
         location: '中国广州',
         orcid: 'ORCID',
-        intro: '我现为华南师范大学计算机学院博士研究生，自2024年9月起于中国广州就读。我于2023年获江西农业大学计算机科学与技术硕士学位（推免），2020年获江西农业大学网络工程学士学位。我的研究聚焦于机器学习与数据挖掘，特别是特征选择、偏标记学习、多标签学习与标记分布学习，并在医疗健康（如痴呆风险预测）方向开展交叉应用研究。',
+        intro: "我现为华南师范大学计算机学院博士研究生，自2024年9月起于中国广州就读。我于2023年获江西农业大学计算机与信息工程学院硕士学位（推免）。我的研究聚焦于机器学习与数据挖掘，特别是特征选择、偏标记学习与多标签学习，并在医疗健康（如痴呆风险预测）方向和脑机接口开展交叉应用研究。",
         news_heading: '最新动态',
         news_1: '2026年：我们的论文《Multi-label semantic decoding via Hierarchical Encoding and sparse Representation Fusion》发表于 Pattern Recognition。',
         news_2: '2025年：我们的论文《Development and validation of a novel predictive model for dementia risk in middle-aged and elderly depression individuals》发表于 Alzheimer’s Research & Therapy。',
         news_3: '2024年：我们的论文《Confidence-Induced Granular Partial Label Feature Selection via Dependency and Similarity》发表于 IEEE Transactions on Knowledge and Data Engineering。',
         news_4: '2023年：我们的论文《Disambiguation-based partial label feature selection via feature dependency and label consistency》发表于 Information Fusion。',
         publications_heading: '代表性论文',
+        author_legend: '† 共同第一作者；* 通讯作者。IF 标签标注指标年份，点击可查看来源。',
+        cas_zone: '中科院一区',
         complete_publications: '完整且最新的论文列表请参见我的',
         orcid_profile: 'ORCID 主页',
         period: '。',
         honors_heading: '荣誉',
-        honor_1: '第十九届中国研究生数学建模竞赛全国三等奖。',
         honor_2: '优秀研究生。',
-        honor_3: '第五届中青杯全国大学生数学建模竞赛全国一等奖。',
-        honor_4: '江西省研究生数学建模竞赛省特等奖。',
-        honor_5: '江西省研究生数学建模竞赛省一等奖。',
-        honor_6: '校研究生一等奖学金两次，江西省学业奖学金一次。',
         honor_7: '优秀本科毕业生。',
-        honor_8: '第十届蓝桥杯全国总决赛 Java 组全国二等奖。',
-        honor_9: '江西省大学生数学建模竞赛省三等奖。',
-        honor_10: '第九届蓝桥杯江西赛区 Java 组省一等奖。',
-        honor_patent: '国家技术发明专利一项（撰写），国家计算机软件著作权三项。',
-        nav_experience: '实习经历',
-        experience_heading: '实习经历',
-        exp_baidu: '百度国际科技（深圳）有限公司 · 知识图谱部门',
-        exp_baidu_1: '负责百度大脑事件图谱项目中数据分析与数据清洗工作，协助事件图谱的搭建与项目部署。',
-        exp_baidu_2: '负责灵医智慧 CDSS 项目中病案质控平台的搭建与开发，该项目已在北京大学国际医院、南京鼓楼医院、南昌大学第一附属医院等三甲医院上线。',
-        exp_baidu_3: '实习期间荣获“百度优秀实习生”称号。',
-        exp_tv: '江西广播电视台 · 算法开发',
-        exp_tv_1: '基于深度学习语音识别、语音分割、声纹识别与模糊聚类等技术，完成《金牌调解》对话语料抽取项目，目前已在广电内部投入使用。',
-        exp_tv_2: '基于 Sambert-Hifigan，使用金牌调解主持人章亭的视频数据，训练了具有其说话特性的个性化语音合成模型，目前已在广电内部投入使用。',
+        nav_experience: "工作经历",
+        experience_heading: "工作经历",
+        exp_baidu: "百度国际科技（深圳）有限公司，知识图谱部门（实习）。",
+        exp_hospital: '南昌大学第二附属医院影像中心，戴西件主任团队，技术总监。',
         education_heading: '教育经历',
         education_phd: '博士研究生，华南师范大学计算机学院，中国广州（2024.09至今）。',
-        education_ms: '硕士（推免），江西农业大学计算机科学与技术，中国南昌（2020.09–2023.06）。',
-        education_bs: '本科，江西农业大学网络工程，中国南昌（2016.09–2020.06）。',
+        education_ms: "硕士（推免），江西农业大学计算机与信息工程学院，中国南昌，2023年。",
         portrait_alt: '李艺晖头像'
       }
     };
