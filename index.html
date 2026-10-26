@@ -52,6 +52,10 @@
     .paper-tag { display: inline-flex; align-items: center; padding: 3px 9px; border: 1px solid #dce6e3; border-radius: 5px; background: #f1f7f4; color: #35634e; font-size: .75rem; font-weight: 600; line-height: 1.5; text-decoration: none; }
     .paper-tag.metric { color: #354f67; background: #f1f5f9; border-color: #dce4ed; }
     .paper-tag.metric:hover { background: #e5edf5; }
+    .bibtex-toggle { font-family: inherit; cursor: pointer; }
+    .bibtex-toggle[aria-expanded="true"] { background: #dfe8f0; border-color: #aebfce; }
+    .bibtex-panel { margin: 10px 0 0; padding: 14px 16px; border: 1px solid #dfe3e6; border-radius: 5px; background: #f0f1f2; color: #30383e; font: .8rem/1.6 ui-monospace, SFMono-Regular, Consolas, monospace; white-space: pre-wrap; overflow-wrap: anywhere; tab-size: 2; }
+    .bibtex-panel[hidden] { display: none; }
     .author-mark { color: #354f67; font-weight: 700; padding-left: 1px; }
     .author-legend { font-size: .82rem; margin: 0 0 15px; color: #70777c; }
     .paper-list strong { font-weight: 700; }
@@ -147,10 +151,44 @@
         <h2 id="publications-heading" data-i18n="publications_heading">Selected Publications</h2>
         <p class="author-legend" data-i18n="author_legend">† Equal contribution / co-first authors; * Corresponding authors.</p>
         <ul class="body-list paper-list">
-          <li><a class="paper-title" href="https://doi.org/10.1016/j.patcog.2026.114789" target="_blank" rel="noopener noreferrer">Multi-label semantic decoding via Hierarchical Encoding and sparse Representation Fusion</a>. <strong>Yihui Li</strong>, Qianzhi Ye, Guodong Du, Yong Tang, and Jia Zhang<sup class="author-mark">*</sup>. <strong>Pattern Recognition</strong>, 2026.<div class="paper-tags"><span class="paper-tag" data-i18n="cas_zone">CAS Zone 1 TOP</span><a class="paper-tag metric" href="https://www.sciencedirect.com/journal/pattern-recognition" target="_blank" rel="noopener noreferrer">IF 9.1 · 2025</a><a class="paper-tag metric" href="https://github.com/cseroun06/HERF" target="_blank" rel="noopener noreferrer" data-i18n="code_link">Code</a></div></li>
-          <li><a class="paper-title" href="https://doi.org/10.1186/s13195-025-01750-6" target="_blank" rel="noopener noreferrer">Development and validation of a novel predictive model for dementia risk in middle-aged and elderly depression individuals: a large and longitudinal machine learning cohort study</a>. Xuan Xiao<sup class="author-mark">†</sup>, <strong>Yihui Li</strong><sup class="author-mark">†</sup>, Qiaoboyang Wu, Xinting Liu, Xu Cao, Maiping Li, Jianjing Liu, Lianggeng Gong, and Xi-jian Dai<sup class="author-mark">*</sup>. <strong>Alzheimer's Research & Therapy</strong>, 2025.<div class="paper-tags"><span class="paper-tag" data-i18n="cas_zone">CAS Zone 1 TOP</span><a class="paper-tag metric" href="https://link.springer.com/journal/13195" target="_blank" rel="noopener noreferrer">IF 8.9 · 2025</a></div></li>
-          <li><a class="paper-title" href="https://doi.org/10.1109/TKDE.2024.3405489" target="_blank" rel="noopener noreferrer">Confidence-Induced Granular Partial Label Feature Selection via Dependency and Similarity</a>. Wenbin Qian<sup class="author-mark">*</sup>, <strong>Yihui Li</strong>, Qianzhi Ye<sup class="author-mark">*</sup>, Shuyin Xia, Jintao Huang, and Weiping Ding. <strong>IEEE Transactions on Knowledge and Data Engineering</strong>, 2024.<div class="paper-tags"><span class="paper-tag" data-i18n="cas_zone">CAS Zone 1 TOP</span><a class="paper-tag metric" href="https://fds.cityu.edu.mo/uploads/userfiles/Q1%20Journal%20Catalog_Computer%20Science%20%26%20Engineering%2020250812.pdf" target="_blank" rel="noopener noreferrer">IF 10.4 · 2024</a><a class="paper-tag metric" href="https://github.com/jxau-kdd/CPDS" target="_blank" rel="noopener noreferrer" data-i18n="code_link">Code</a></div></li>
-          <li><a class="paper-title" href="https://doi.org/10.1016/j.inffus.2023.01.019" target="_blank" rel="noopener noreferrer">Disambiguation-based partial label feature selection via feature dependency and label consistency</a>. Wenbin Qian<sup class="author-mark">†,*</sup>, <strong>Yihui Li</strong><sup class="author-mark">†</sup>, Qianzhi Ye, Weiping Ding, and Wenhao Shu. <strong>Information Fusion</strong>, 2023.<div class="paper-tags"><span class="paper-tag" data-i18n="cas_zone">CAS Zone 1 TOP</span><span class="paper-tag metric">IF 18.6 · 2024</span><a class="paper-tag metric" href="https://github.com/jxau-kdd/PFFL" target="_blank" rel="noopener noreferrer" data-i18n="code_link">Code</a></div></li>
+          <li><a class="paper-title" href="https://doi.org/10.1016/j.patcog.2026.114789" target="_blank" rel="noopener noreferrer">Multi-label semantic decoding via Hierarchical Encoding and sparse Representation Fusion</a>. <strong>Yihui Li</strong>, Qianzhi Ye, Guodong Du, Yong Tang, and Jia Zhang<sup class="author-mark">*</sup>. <strong>Pattern Recognition</strong>, 2026.<div class="paper-tags"><span class="paper-tag" data-i18n="cas_zone">CAS Zone 1 TOP</span><a class="paper-tag metric" href="https://www.sciencedirect.com/journal/pattern-recognition" target="_blank" rel="noopener noreferrer">IF 9.1 · 2025</a><a class="paper-tag metric" href="https://github.com/cseroun06/HERF" target="_blank" rel="noopener noreferrer" data-i18n="code_link">Code</a><button type="button" class="paper-tag metric bibtex-toggle" aria-expanded="false" aria-controls="bibtex-pr">BibTeX</button></div><pre class="bibtex-panel" id="bibtex-pr" hidden><code>@article{li2027herf,
+  title = {Multi-label semantic decoding via {Hierarchical Encoding} and sparse {Representation Fusion}},
+  author = {Li, Yihui and Ye, Qianzhi and Du, Guodong and Tang, Yong and Zhang, Jia},
+  journal = {Pattern Recognition},
+  year = {2027},
+  volume = {182},
+  pages = {114789},
+  doi = {10.1016/j.patcog.2026.114789}
+}</code></pre></li>
+          <li><a class="paper-title" href="https://doi.org/10.1186/s13195-025-01750-6" target="_blank" rel="noopener noreferrer">Development and validation of a novel predictive model for dementia risk in middle-aged and elderly depression individuals: a large and longitudinal machine learning cohort study</a>. Xuan Xiao<sup class="author-mark">†</sup>, <strong>Yihui Li</strong><sup class="author-mark">†</sup>, Qiaoboyang Wu, Xinting Liu, Xu Cao, Maiping Li, Jianjing Liu, Lianggeng Gong, and Xi-jian Dai<sup class="author-mark">*</sup>. <strong>Alzheimer's Research & Therapy</strong>, 2025.<div class="paper-tags"><span class="paper-tag" data-i18n="cas_zone">CAS Zone 1 TOP</span><a class="paper-tag metric" href="https://link.springer.com/journal/13195" target="_blank" rel="noopener noreferrer">IF 8.9 · 2025</a><button type="button" class="paper-tag metric bibtex-toggle" aria-expanded="false" aria-controls="bibtex-art">BibTeX</button></div><pre class="bibtex-panel" id="bibtex-art" hidden><code>@article{xiao2025dementia,
+  title = {Development and validation of a novel predictive model for dementia risk in middle-aged and elderly depression individuals: a large and longitudinal machine learning cohort study},
+  author = {Xiao, Xuan and Li, Yihui and Wu, Qiaoboyang and Liu, Xinting and Cao, Xu and Li, Maiping and Liu, Jianjing and Gong, Lianggeng and Dai, Xi-jian},
+  journal = {Alzheimer&#x27;s Research &amp; Therapy},
+  year = {2025},
+  volume = {17},
+  number = {1},
+  pages = {103},
+  doi = {10.1186/s13195-025-01750-6}
+}</code></pre></li>
+          <li><a class="paper-title" href="https://doi.org/10.1109/TKDE.2024.3405489" target="_blank" rel="noopener noreferrer">Confidence-Induced Granular Partial Label Feature Selection via Dependency and Similarity</a>. Wenbin Qian<sup class="author-mark">*</sup>, <strong>Yihui Li</strong>, Qianzhi Ye<sup class="author-mark">*</sup>, Shuyin Xia, Jintao Huang, and Weiping Ding. <strong>IEEE Transactions on Knowledge and Data Engineering</strong>, 2024.<div class="paper-tags"><span class="paper-tag" data-i18n="cas_zone">CAS Zone 1 TOP</span><a class="paper-tag metric" href="https://fds.cityu.edu.mo/uploads/userfiles/Q1%20Journal%20Catalog_Computer%20Science%20%26%20Engineering%2020250812.pdf" target="_blank" rel="noopener noreferrer">IF 10.4 · 2024</a><a class="paper-tag metric" href="https://github.com/jxau-kdd/CPDS" target="_blank" rel="noopener noreferrer" data-i18n="code_link">Code</a><button type="button" class="paper-tag metric bibtex-toggle" aria-expanded="false" aria-controls="bibtex-tkde">BibTeX</button></div><pre class="bibtex-panel" id="bibtex-tkde" hidden><code>@article{qian2024cpds,
+  title = {Confidence-Induced Granular Partial Label Feature Selection via Dependency and Similarity},
+  author = {Qian, Wenbin and Li, Yihui and Ye, Qianzhi and Xia, Shuyin and Huang, Jintao and Ding, Weiping},
+  journal = {IEEE Transactions on Knowledge and Data Engineering},
+  year = {2024},
+  volume = {36},
+  number = {11},
+  pages = {5797--5810},
+  doi = {10.1109/TKDE.2024.3405489}
+}</code></pre></li>
+          <li><a class="paper-title" href="https://doi.org/10.1016/j.inffus.2023.01.019" target="_blank" rel="noopener noreferrer">Disambiguation-based partial label feature selection via feature dependency and label consistency</a>. Wenbin Qian<sup class="author-mark">†,*</sup>, <strong>Yihui Li</strong><sup class="author-mark">†</sup>, Qianzhi Ye, Weiping Ding, and Wenhao Shu. <strong>Information Fusion</strong>, 2023.<div class="paper-tags"><span class="paper-tag" data-i18n="cas_zone">CAS Zone 1 TOP</span><span class="paper-tag metric">IF 18.6 · 2024</span><a class="paper-tag metric" href="https://github.com/jxau-kdd/PFFL" target="_blank" rel="noopener noreferrer" data-i18n="code_link">Code</a><button type="button" class="paper-tag metric bibtex-toggle" aria-expanded="false" aria-controls="bibtex-ifu">BibTeX</button></div><pre class="bibtex-panel" id="bibtex-ifu" hidden><code>@article{qian2023pffl,
+  title = {Disambiguation-based partial label feature selection via feature dependency and label consistency},
+  author = {Qian, Wenbin and Li, Yihui and Ye, Qianzhi and Ding, Weiping and Shu, Wenhao},
+  journal = {Information Fusion},
+  year = {2023},
+  volume = {94},
+  pages = {152--168},
+  doi = {10.1016/j.inffus.2023.01.019}
+}</code></pre></li>
         </ul>
         <p class="muted"><span data-i18n="complete_publications">For the complete and most up-to-date publication list, please visit my</span> <a href="https://orcid.org/0009-0009-0776-0276" target="_blank" rel="noopener noreferrer" data-i18n="orcid_profile">ORCID profile</a><span data-i18n="period">.</span></p>
       </section>
@@ -181,6 +219,15 @@
     </article>
   </main>
   <script>
+    document.querySelectorAll('.bibtex-toggle').forEach(button => {
+      button.addEventListener('click', () => {
+        const panel = document.getElementById(button.getAttribute('aria-controls'));
+        const expanded = button.getAttribute('aria-expanded') !== 'true';
+        panel.hidden = !expanded;
+        button.setAttribute('aria-expanded', String(expanded));
+      });
+    });
+
     const translations = {
       en: {
         page_title: 'Yihui Li | Academic Homepage',
